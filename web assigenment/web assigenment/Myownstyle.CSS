@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background: rgb(8, 8, 8);
+    color: #fff;
+    font-size: 20px;
+
+}
+p{
+    text-align: justify;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+header-text{
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+img.right{
+    vertical-align: top;
+    float: right;
+    width: 450px;
+    height: auto;
+    margin-top: -17pc;
+    border-radius: 50%;
+    animation: linear infinite;
+}
+/*------------about me----------*/
+#about{
+    padding: 80px 0px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-links::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 17px;
+
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tabs{
+    display: block;
+}
+/*-----------Projects----------*/
+img.web{
+    width: 450px;
+    height: auto;
+}
+p{
+    text-align: justify;
+}
+img.Ad{
+    width: 450px;
+    height: auto;
+}
+img.left{
+    width: 450px;
+    height: auto;
+}
+/*-------------Skills-------------*/
+.container1{
+    background: rgb(0, 0, 0);
+    
+}
+
+.Min{
+    margin: 5px;
+    color: #ff004f;
+}
+.skills{
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(79, 73, 73, 0.25), 0 10px 10px rgba(79, 73, 73, 0.25);
+}
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #111214;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(176, 111, 111)0%, rgb(177, 19, 22)100%);
+}
+.Html{
+    width: 100%;
+    animation: Html 3s;
+}
+.Css{
+    width: 90%;
+    animation: Css 3s;
+}
+.Javascript{
+    width: 70%;
+    animation: Javascript 3s;
+}
+.Java{
+    width: 30%;
+    animation: Java 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes Css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes Javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes Java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
